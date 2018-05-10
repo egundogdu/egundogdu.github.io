@@ -63,14 +63,14 @@
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   </head>
   <body>
-  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+  <table width="1200" border="0" align="center" cellspacing="0" cellpadding="0">
     <tr>
     <td>
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
       <tr>
         <td width="67%" valign="middle">
         <p align="center">
-          <name>Erhan Gundogdu</name>
+          <name>Erhan Gundogdu, Ph.D.</name>
         </p>
         <p>I am a Postdoctoral Researcher at CVLAB, Ecole Polytechnique Federale de Lausanne, where I work on computer vision.
         </p>
@@ -80,30 +80,31 @@
         </p>
         </td>
 	    <td width="33%">
-        <img src="erhangundogdu.jpg">
+        <img src="erhangundogdu.jpg" width="200" height="250">
         </td>
       </tr>
       </table>
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
       <tr>
         <td width="100%" valign="middle">
-          <heading>Research</heading>
+          <heading>Research Interests</heading>
           <p>
           My research interests include but not limited to: Computer vision, deep learning, machine learning, visual object tracking, data association for tracking,
-fine-grained object recognition, deep metric learning, signal processing and optimization.
+          fine-grained object recognition, deep metric learning, signal processing and optimization.
           <p> For my full publication list, please visit <a target="_blank" href="https://scholar.google.ch/citations?user=nZD_5vsAAAAJ&hl=en&oi=ao">my Google Scholar Page</a>.
           <p> My active interests are Garment virtualization on 3D body shapes (at CVLAB, EPFL), visual object tracking (for my Ph.D. thesis) and fine-grained object recognition (at ASELSAN Research Center, Turkey).
           </p>
         </td>
       </tr>
       </table>
-
+      <heading>Selected Studies </heading>
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
       <tr>
       <td width="25%">
       <img src='visuals.png' width="300" height="200">
       </td>
       <td valign="top" width="75%">
+      <heading>Deep Learning for Correlation Filters</heading><br>
       <papertitle>Good Features to Correlate for Visual Tracking</papertitle>
       <br>
       (<a target="_blank" href="https://ieeexplore.ieee.org/document/8291524/">ieee.org</a>,
@@ -114,7 +115,7 @@ fine-grained object recognition, deep metric learning, signal processing and opt
       / 
       <a target="_blank" href="CFCF.bib">bibtex</a>
       <p></p>
-      <p>In this work, the problem of learning deep fully convolutional features for the
+      <p style = "font-size:15px">In this work, the problem of learning deep fully convolutional features for the
         CFB visual tracking is formulated. To learn the proposed model, a novel and efficient backpropagation algorithm is presented
         based on the loss function of the network. The proposed learning framework enables the network model to be flexible
         for a custom design. Moreover, it alleviates the dependency on the network trained for classification. The proposed tracking method is the winner of
@@ -122,9 +123,79 @@ fine-grained object recognition, deep metric learning, signal processing and opt
       </td>
       </tr>
       </table>
+      
+      
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+      <td width="25%">
+        <img src='ensemble.png' width="300" height="200">
+        <img src='spatialWindowing.png' width="300" height="200">  
+      </td>
+      <td valign="top" width="75%">
+      <heading>Improving Correlation Filters</heading><br>
+      <papertitle>Extending Correlation Filter based Visual Tracking by Tree-Structured Ensemble and Spatial Windowing</papertitle>(<a target="_blank" href="https://ieeexplore.ieee.org/document/7995133/">ieee.org</a>)<br>
+        <strong>Erhan Gundogdu</strong>, Huseyin Ozkan, A. Ayd&#305n Alatan <br>
+        <em>IEEE Transactions on Image Processing</em>, 2017 <br>   
+      <papertitle>Spatial Windowing for Correlation Filter Based Visual Tracking</papertitle>(<a target="_blank" href="https://ieeexplore.ieee.org/document/7532645/">ieee.org</a>)<br>
+        <strong>Erhan Gundogdu</strong>, A. Ayd&#305n Alatan <br>
+        <em>IEEE International Conference on Image Processing (ICIP), 2016</em> <br>
+      <papertitle>Ensemble of Adaptive Correlation Filters for Robust Visual Tracking</papertitle>(<a target="_blank" href="https://ieeexplore.ieee.org/document/7738031/">ieee.org</a>)<br>
+        <strong>Erhan Gundogdu</strong>, Huseyin Ozkan, A. Ayd&#305n Alatan<br>
+        <em>IEEE International Conference on Advanced Video and Signal-based Surveillance (AVSS), 2016</em> <br> 
+      <a target="_blank" href="ENSEMBLE.bib">bibtex</a>
+      <p></p>
+      
+      <!--<a href="javascript:showhide('uniquename')">Details:</a>
+    	<div id="uniquename" style="display:none;">-->
+    	<p style = "font-size:15px">In the studies above, we improve upon the conventional correlation filters by proposing two methods. 
+        First, we present an approach to learn a spatial window at each frame during the course of the tracking. 
+        When the learned window is element-wise multiplied by the object patch/correlation filter, 
+        it can suppress the irrelevant regions of the object patch. Second, a tree-structured ensemble of trackers algorithm is 
+        proposed to combine multiple correaltion filter-based trackers while hierarchically keeping the appearance model of the object 
+        at the tree nodes. At each frame, only the relevant node trackers are activated to be combined as the final tracking decision.
+        The combination of these two approaches also yield a better performance.</p>
+    	<!--</div>-->
+      </td>
+      </tr>
+      </table>
+      
+      
+      
+      
+      
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+      <td width="25%">
+        <img src='MarvelDataset.jpg' width="300" height="200">
+      </td>
+      <td valign="top" width="75%">
+      <heading>Visual Recognition for Maritime Vessels</heading><br>
+      <papertitle>MARVEL: A Large-Scale Image Dataset for Maritime Vessels</papertitle>(<a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-319-54193-8_11">SpringerLink</a>)<br>
+        <strong>Erhan Gundogdu</strong>, Berkan Solmaz, Veysel Yucesoy, Aykut Koc<br>
+        <em>Asian Conference on Computer Vision</em>, 2016 <br>
+      <papertitle>Generic and Attribute-specific Deep Representations for Maritime Vessels</papertitle>(<a target="_blank" href="https://ipsjcva.springeropen.com/articles/10.1186/s41074-017-0033-4">SpringerOpen</a>)<br>
+       Berkan Solmaz, <strong>Erhan Gundogdu</strong>, Veysel Yucesoy, Aykut Koc, A. Ayd&#305n Alatan <br>
+        <em>IPSJ Transactions on Computer Vision and Applications, 2017</em> <br>
+      <a target="_blank" href="VESSELS.bib">bibtex</a>
+      / 
+      <a target="_blank" href="https://github.com/avaapm/marveldataset2016">dataset page</a>
+      <p></p>
+      
+    	<p style = "font-size:15px">In the above studies, we first construct a large-scale maritime vessel dataset by distilling 2M annotated vessel images. 
+        Based on a semi-supervised clustering scheme, 26 hyper-classes for vessel types are construced. Four potential applications are introduced;
+         namely, vessel classification, verification, retrieval and recognition with their provided baseline results. Furthermore, we attempted interesting problems 
+        of visual marine surveillance such as predicting and classifying maritime vessel attributes such as length, summer deadweight, draught, and gross tonnage 
+        by solely interpreting the visual content in the wild, where no additional cues such as scale, orientation, or location are provided. 
+        By utilizing generic and attribute-specific deep representations for maritime vessels, we obtained promising results for the aforementioned applications.</p>
+      </td>
+      </tr>
+      </table>
+  
 
     </td>
     </tr>
-</table> 
+</table>
+
+
 </body>
 </html>
