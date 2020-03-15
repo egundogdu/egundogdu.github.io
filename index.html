@@ -121,7 +121,7 @@
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
         <tr>
           <td width="100%" valign="middle">
-            <heading style = "font-size:30px"><b>Selected Studies</b></heading>
+            <heading style = "font-size:30px"><b>Selected Projects</b></heading>
           </td>
         </tr>
       </table>
@@ -136,10 +136,11 @@
       <papertitle>Shape Reconstruction by Learning Differentiable Surface Representations</papertitle>
       <br>
       (<a target="_blank" href="https://arxiv.org/pdf/1911.11227.pdf">arXiv Preprint</a>)<br>
-      Jan Bednarik, Shaifali Parashar, <strong>Erhan Gundogdu</strong>, Mathieu Salzmann, Pascal Fua,
-      <em>accepted to IEEE Conference on Computer Vision and Pattern Recognition</em>, 2020 <br>
+      J. Bednarik, S. Parashar, <strong>E. Gundogdu</strong>, M. Salzmann, P. Fua,
+      <em>accepted to IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2020 <br>
       <p></p>
-      <p align="justify" style = "font-size:15px">Generative models that produce point clouds have emerged as a powerful tool to represent 3D surfaces, and the best current ones rely on learning an ensemble of parametric representations. Unfortunately, they offer no control over the deformations of the surface patches that form the ensemble and thus fail to prevent them from either overlapping or collapsing into single points or lines. As a consequence, computing shape properties such as surface normals and curvatures becomes difficult and unreliable. In this paper, we show that we can exploit the inherent differentiability of deep networks to leverage differential surface properties during training so as to prevent patch collapse and strongly reduce patch overlap. Furthermore, this lets us reliably compute quantities such as surface normals and curvatures. We will demonstrate on several tasks that this yields more accurate surface reconstructions than the state-of-the-art methods in terms of normals estimation and amount of collapsed and overlapped patches.</p>
+      <p id="textAreaSHAPE" align="justify" style = "font-size:15px">In this paper, we show that we can exploit the inherent differentiability of deep networks to leverage differential surface properties during training so as to prevent patch collapse and strongly reduce patch overlap.
+      </p><a id="toggleButtonSHAPE" onclick="toggleTextSHAPE()" href="javascript:void(0);">See More</a>
       </td>
       </tr>
       </table>
@@ -161,11 +162,12 @@
       <heading>3D Cloth Draping by Deep Learning</heading><br>
       <papertitle>GarNet: A Two-stream Network for Fast and Accurate 3D Cloth Draping</papertitle> 
       (<a target="_blank" href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Gundogdu_GarNet_A_Two-Stream_Network_for_Fast_and_Accurate_3D_Cloth_ICCV_2019_paper.pdf">thecvf.com</a>, <a target="_blank" href="https://arxiv.org/abs/1811.10983">arXiv Preprint</a>)<br>
-      <strong>Erhan Gundogdu</strong>, Victor Constantin, Amrollah Seifoddini, Minh Dang, Mathieu Salzmann, Pascal Fua, 
+      <strong>E. Gundogdu</strong>, V. Constantin, A. Seifoddini, M. Dang, M. Salzmann, P. Fua, 
       <em>IEEE International Conference on Computer Vision</em>, 2019 <br>
       <a target="_blank" href="garnet.bib">bibtex</a>, <a target="_blank" href="https://cvlab.epfl.ch/research/garment-simulation/garnet/">webpage</a>
       <p></p>
-      <p align="justify" style = "font-size:15px"> While Physics-Based Simulation (PBS) can accurately drape a 3D garment on a 3D body, it remains too costly for real-time applications, such as virtual try-on. By contrast, inference in a deep network, requiring a single forward pass, is much faster. Taking advantage of this, we propose a novel architecture to fit a 3D garment template to a 3D body. Specifically, we build upon the recent progress in 3D point cloud processing with deep networks to extract garment features at varying levels of detail, including point-wise, patch-wise and global features. We fuse these features with those extracted in parallel from the 3D body, so as to model the cloth-body interactions. The resulting two-stream architecture, which we call as GarNet, is trained using a loss function inspired by physics-based modeling, and delivers visually plausible garment shapes whose 3D points are, on average, less than 1 cm away from those of a PBS method, while running 100 times faster. Moreover, the proposed method can model various garment types with different cutting patterns when parameters of those patterns are given as input to the network. </p>
+      <p id="textAreaGAR" align="justify" style = "font-size:15px"> While Physics-Based Simulation (PBS) can accurately drape a 3D garment on a 3D body, it remains too costly for real-time applications, such as virtual try-on. By contrast, inference in a deep network, requiring a single forward pass, is much faster. Taking advantage of this, we propose a novel architecture to fit a 3D garment template to a 3D body. 
+      </p><a id="toggleButtonGAR" onclick="toggleTextGAR()" href="javascript:void(0);">See More</a>
       </td>
       </tr>
       </table>
@@ -184,10 +186,9 @@
       <br>
       (<a target="_blank" href="https://ieeexplore.ieee.org/document/8291524/">ieee.org</a>,
       <a target="_blank" href="https://arxiv.org/pdf/1704.06326.pdf">arXiv Preprint</a>)<br>
-      <strong>Erhan Gundogdu</strong>, A. Ayd&#305n Alatan,
+      <strong>E. Gundogdu</strong>, A. A. Alatan,
       <em>IEEE Transactions on Image Processing</em>, 2018 <br>
       <a target="_blank" href="https://github.com/egundogdu/CFCF">code</a>
-      / 
       <a target="_blank" href="CFCF.bib">bibtex</a>
       <p></p>
       <p align="justify" style = "font-size:15px">In this work, the problem of learning deep fully convolutional features for the
@@ -208,15 +209,17 @@
       </td>
       <td valign="top" width="75%">
       <heading>Improving Correlation Filters</heading><br>
-      <papertitle>Extending Correlation Filter based Visual Tracking by Tree-Structured Ensemble and Spatial Windowing</papertitle> (<a target="_blank" href="https://ieeexplore.ieee.org/document/7995133/">ieee.org</a>)<br>
-        <strong>Erhan Gundogdu</strong>, Huseyin Ozkan, A. Ayd&#305n Alatan <br>
+      <ul>
+      <li><papertitle>Extending Correlation Filter based Visual Tracking by Tree-Structured Ensemble and Spatial Windowing</papertitle> (<a target="_blank" href="https://ieeexplore.ieee.org/document/7995133/">ieee.org</a>)<br>
+        <strong>E. Gundogdu</strong>, H. Ozkan, A. A. Alatan,
         <em>IEEE Transactions on Image Processing</em>, 2017 <br>   
-      <papertitle>Spatial Windowing for Correlation Filter Based Visual Tracking</papertitle> (<a target="_blank" href="https://ieeexplore.ieee.org/document/7532645/">ieee.org</a>)<br>
-        <strong>Erhan Gundogdu</strong>, A. Ayd&#305n Alatan <br>
+      </li><li><papertitle>Spatial Windowing for Correlation Filter Based Visual Tracking</papertitle> (<a target="_blank" href="https://ieeexplore.ieee.org/document/7532645/">ieee.org</a>)<br>
+        <strong>E. Gundogdu</strong>, A. A. Alatan,
         <em>IEEE International Conference on Image Processing (ICIP), 2016</em> <br>
-      <papertitle>Ensemble of Adaptive Correlation Filters for Robust Visual Tracking</papertitle> (<a target="_blank" href="https://ieeexplore.ieee.org/document/7738031/">ieee.org</a>)<br>
-        <strong>Erhan Gundogdu</strong>, Huseyin Ozkan, A. Ayd&#305n Alatan<br>
-        <em>IEEE International Conference on Advanced Video and Signal-based Surveillance (AVSS), 2016</em> <br> 
+      </li><li><papertitle>Ensemble of Adaptive Correlation Filters for Robust Visual Tracking</papertitle> (<a target="_blank" href="https://ieeexplore.ieee.org/document/7738031/">ieee.org</a>)<br>
+        <strong>E. Gundogdu</strong>, H. Ozkan, A. A. Alatan,
+        <em>IEEE International Conference on Advanced Video and Signal-based Surveillance (AVSS), 2016</em> <br>
+      </li></ul>
       <a target="_blank" href="ENSEMBLE.bib">bibtex</a>
       <p></p>
       
@@ -232,21 +235,27 @@
       </td>
       <td valign="top" width="75%">
       <heading>Visual Recognition for Maritime Vessels</heading><br>
-      <papertitle>MARVEL: A Large-Scale Image Dataset for Maritime Vessels</papertitle> (<a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-319-54193-8_11">SpringerLink</a>)<br>
-        <strong>Erhan Gundogdu</strong>, Berkan Solmaz, Veysel Yucesoy, Aykut Koc<br>
+      <ul>
+      <li><papertitle>MARVEL: A Large-Scale Image Dataset for Maritime Vessels</papertitle> (<a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-319-54193-8_11">SpringerLink</a>)<br>
+        <strong>E. Gundogdu</strong>, B. Solmaz, V. Yucesoy, A. Koc,
         <em>Asian Conference on Computer Vision</em>, 2016 <br>
-      <papertitle>Generic and Attribute-specific Deep Representations for Maritime Vessels </papertitle>(<a target="_blank" href="https://ipsjcva.springeropen.com/articles/10.1186/s41074-017-0033-4">SpringerOpen</a>)<br>
-       Berkan Solmaz, <strong>Erhan Gundogdu</strong>, Veysel Yucesoy, Aykut Koc <br>
+      </li>
+      <li><papertitle>Generic and Attribute-specific Deep Representations for Maritime Vessels </papertitle>(<a target="_blank" href="https://ipsjcva.springeropen.com/articles/10.1186/s41074-017-0033-4">SpringerOpen</a>)<br>
+       B. Solmaz, <strong>E. Gundogdu</strong>, V. Yucesoy, A. Koc,
         <em>IPSJ Transactions on Computer Vision and Applications, 2017</em> <br>
-	  <papertitle>Fine-Grained Recognition of Maritime Vessels and Land Vehicles by Deep Feature Embedding </papertitle>(<a target="_blank" href="http://digital-library.theiet.org/content/journals/10.1049/iet-cvi.2018.5187">IET Digital Lib.</a>)<br>
-       Berkan Solmaz, <strong>Erhan Gundogdu</strong>, Veysel Yucesoy, Aykut Koc, A. Ayd&#305n Alatan <br>
+	    </li>
+      <li><papertitle>Fine-Grained Recognition of Maritime Vessels and Land Vehicles by Deep Feature Embedding </papertitle>(<a target="_blank" href="http://digital-library.theiet.org/content/journals/10.1049/iet-cvi.2018.5187">IET Digital Lib.</a>)<br>
+       B. Solmaz, <strong>E. Gundogdu</strong>, V. Yucesoy, A. Koc, A. A. Alatan,
         <em>IEEE, IET Computer Vision, 2018</em> <br>
+      </li>
+      </ul>
       <a target="_blank" href="VESSELS.bib">bibtex</a>
       / 
       <a target="_blank" href="https://github.com/avaapm/marveldataset2016">dataset page</a>
       <p></p>
       
-    	<p align="justify" style = "font-size:15px">In the above studies, we first construct a large-scale maritime vessel dataset by distilling 2M annotated vessel images. Based on a semi-supervised clustering scheme, 26 hyper-classes for vessel types are construced. Four potential applications are introduced; namely, vessel classification, verification, retrieval and recognition with their provided baseline results. Furthermore, we attempted interesting problems of visual marine surveillance such as predicting and classifying maritime vessel attributes such as length, summer deadweight, draught, and gross tonnage by solely interpreting the visual content in the wild, where no additional cues such as scale, orientation, or location are provided. By utilizing generic and attribute-specific deep representations for maritime vessels, we obtained promising results for the aforementioned applications.</p>
+    	<p id="textAreaVES" align="justify" style = "font-size:15px">In the studies above, we first construct a large-scale maritime vessel dataset by distilling 2M annotated vessel images. Based on a semi-supervised clustering scheme, 26 hyper-classes for vessel types are construced. Four potential applications are introduced; namely, vessel classification, verification, retrieval and recognition with their provided baseline results.
+      </p> <a id="toggleButtonVES" onclick="toggleTextVES()" href="javascript:void(0);">See More</a>
       </td>
       </tr>
       </table>
@@ -260,29 +269,104 @@
       </td>
       <td valign="top" width="75%">
       <heading>Tracking and Recognition in Infrared Spectrum</heading><br>
-      <papertitle>Comparison of Infrared and Visible Imagery for Object Tracking: Toward Trackers with Superior IR Performance</papertitle> (<a target="_blank" href="http://openaccess.thecvf.com/content_cvpr_workshops_2015/W05/papers/Gundogdu_Comparison_of_Infrared_2015_CVPR_paper.pdf">thecvf.com</a>)<br>
-        <strong>Erhan Gundogdu</strong>, Huseyin Ozkan, H. Seckin Demir, Hamza Ergezer, Erdem Akagunduz, S. Kubilay Pakin<br>
+
+      <ul>
+      <li><papertitle>Comparison of Infrared and Visible Imagery for Object Tracking: Toward Trackers with Superior IR Performance</papertitle> (<a target="_blank" href="http://openaccess.thecvf.com/content_cvpr_workshops_2015/W05/papers/Gundogdu_Comparison_of_Infrared_2015_CVPR_paper.pdf">thecvf.com</a>)<br>
+        <strong>E. Gundogdu</strong>, H. Ozkan, H. S. Demir, H. Ergezer, E. Akagunduz, S. K. Pakin<br>
         <em>IEEE Computer Vision and Pattern Recognition Workshops</em>, 2015 <br>   
-      <papertitle>Object classification in infrared images using deep representations</papertitle> (<a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/7532521/">ieee.org</a>)<br>
-        <strong>Erhan Gundogdu</strong>, Aykut Koc, A. Ayd&#305n Alatan <br>
+      </li>
+      <li><papertitle>Object classification in infrared images using deep representations</papertitle> (<a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/7532521/">ieee.org</a>)<br>
+        <strong>E. Gundogdu</strong>, A. Koc, A. A. Alatan <br>
         <em>IEEE International Conference on Image Processing (ICIP), 2016</em> <br>
-      <papertitle>Evaluation of Feature Channels for Correlation-Filter-Based Visual Object Tracking in Infrared Spectrum</papertitle> (<a target="_blank" href="http://openaccess.thecvf.com/content_cvpr_2016_workshops/w9/papers/Gundogdu_Evaluation_of_Feature_CVPR_2016_paper.pdf">thecvf.com</a>)<br>
-        <strong>Erhan Gundogdu</strong>, Aykut Koc, Berkan Solmaz, Riad I. Hammoud, A. Ayd&#305n Alatan<br>
-        <em>IEEE Computer Vision and Pattern Recognition Workshops</em>, 2016 <br> 
+      </li>
+      <li><papertitle>Evaluation of Feature Channels for Correlation-Filter-Based Visual Object Tracking in Infrared Spectrum</papertitle> (<a target="_blank" href="http://openaccess.thecvf.com/content_cvpr_2016_workshops/w9/papers/Gundogdu_Evaluation_of_Feature_CVPR_2016_paper.pdf">thecvf.com</a>)<br>
+        <strong>E. Gundogdu</strong>, A. Koc, B. Solmaz, R. I. Hammoud, A. A. Alatan<br>
+        <em>IEEE Computer Vision and Pattern Recognition Workshops</em>, 2016 <br>
+      </li>
+      </ul>
       <a target="_blank" href="INFRARED.bib">bibtex</a>
       <p></p>
       
-    	<p align="justify" style = "font-size:15px">Unlike the visible spectrum, the problem of object recognition and tracking are not extensively studied in Infrared (IR) Spectrum. In these studies, we first provide the first benchmark comparison work where the available tracking methods are evaluated in IR and Visible pairs of 20 videos and a novel ensemble of trackers method is presented. Second, a deep learning based classification network is trained in an in-house dataset (consisting of more than 70 real-world IR videos) to learn IR specific features. Finally, these IR specific features are utilized for IR object tracking, and a significant amount of performance increase is observed with respect to the manually designed features of visible spectrum.
-        </p>
+    	<p id="textAreaIR" align="justify" style = "font-size:15px">Unlike the visible spectrum, the problem of object recognition and tracking are not extensively studied in Infrared (IR) Spectrum. In these studies, we first provide the first benchmark comparison work where the available tracking methods are evaluated in IR and Visible pairs of 20 videos and a novel ensemble of trackers method is presented.
+      </p> <a id="toggleButtonIR" onclick="toggleTextIR()" href="javascript:void(0);">See More</a>
       </td>
       </tr>
       </table>  
-      
-      
 
     </td>
     </tr>
 </table>
+
+<script>
+var statusIR = "less";
+
+function toggleTextIR()
+{
+    var text="Unlike the visible spectrum, the problem of object recognition and tracking are not extensively studied in Infrared (IR) Spectrum. In these studies, we first provide the first benchmark comparison work where the available tracking methods are evaluated in IR and Visible pairs of 20 videos and a novel ensemble of trackers method is presented. Second, a deep learning based classification network is trained in an in-house dataset (consisting of more than 70 real-world IR videos) to learn IR specific features. Finally, these IR specific features are utilized for IR object tracking, and a significant amount of performance increase is observed with respect to the manually designed features of visible spectrum.";
+
+    if (statusIR == "less") {
+        document.getElementById("textAreaIR").innerHTML=text;
+        document.getElementById("toggleButtonIR").innerHTML = "See Less";
+        statusIR = "more";
+    } else if (statusIR == "more") {
+        document.getElementById("textAreaIR").innerHTML = "Unlike the visible spectrum, the problem of object recognition and tracking are not extensively studied in Infrared (IR) Spectrum. In these studies, we first provide the first benchmark comparison work where the available tracking methods are evaluated in IR and Visible pairs of 20 videos and a novel ensemble of trackers method is presented.";
+        document.getElementById("toggleButtonIR").innerHTML = "See More";
+        statusIR = "less"
+    }
+}
+
+var statusVES = "less";
+
+function toggleTextVES()
+{
+    var text="In the above studies, we first construct a large-scale maritime vessel dataset by distilling 2M annotated vessel images. Based on a semi-supervised clustering scheme, 26 hyper-classes for vessel types are construced. Four potential applications are introduced; namely, vessel classification, verification, retrieval and recognition with their provided baseline results. Furthermore, we attempted interesting problems of visual marine surveillance such as predicting and classifying maritime vessel attributes such as length, summer deadweight, draught, and gross tonnage by solely interpreting the visual content in the wild, where no additional cues such as scale, orientation, or location are provided. By utilizing generic and attribute-specific deep representations for maritime vessels, we obtained promising results for the aforementioned applications.";
+
+    if (statusVES == "less") {
+        document.getElementById("textAreaVES").innerHTML=text;
+        document.getElementById("toggleButtonVES").innerHTML = "See Less";
+        statusVES = "more";
+    } else if (statusVES == "more") {
+        document.getElementById("textAreaVES").innerHTML = "In the above studies, we first construct a large-scale maritime vessel dataset by distilling 2M annotated vessel images. Based on a semi-supervised clustering scheme, 26 hyper-classes for vessel types are construced. Four potential applications are introduced; namely, vessel classification, verification, retrieval and recognition with their provided baseline results.";
+        document.getElementById("toggleButtonVES").innerHTML = "See More";
+        statusVES = "less"
+    }
+}
+
+var statusGAR = "less";
+
+function toggleTextGAR()
+{
+    var text="While Physics-Based Simulation (PBS) can accurately drape a 3D garment on a 3D body, it remains too costly for real-time applications, such as virtual try-on. By contrast, inference in a deep network, requiring a single forward pass, is much faster. Taking advantage of this, we propose a novel architecture to fit a 3D garment template to a 3D body. Specifically, we build upon the recent progress in 3D point cloud processing with deep networks to extract garment features at varying levels of detail, including point-wise, patch-wise and global features. We fuse these features with those extracted in parallel from the 3D body, so as to model the cloth-body interactions. The resulting two-stream architecture, which we call as GarNet, is trained using a loss function inspired by physics-based modeling, and delivers visually plausible garment shapes whose 3D points are, on average, less than 1 cm away from those of a PBS method, while running 100 times faster. Moreover, the proposed method can model various garment types with different cutting patterns when parameters of those patterns are given as input to the network.";
+
+    if (statusGAR == "less") {
+        document.getElementById("textAreaGAR").innerHTML=text;
+        document.getElementById("toggleButtonGAR").innerHTML = "See Less";
+        statusGAR = "more";
+    } else if (statusGAR == "more") {
+        document.getElementById("textAreaGAR").innerHTML = "While Physics-Based Simulation (PBS) can accurately drape a 3D garment on a 3D body, it remains too costly for real-time applications, such as virtual try-on. By contrast, inference in a deep network, requiring a single forward pass, is much faster. Taking advantage of this, we propose a novel architecture to fit a 3D garment template to a 3D body.";
+        document.getElementById("toggleButtonGAR").innerHTML = "See More";
+        statusGAR = "less"
+    }
+}
+
+var statusSHAPE = "less";
+
+function toggleTextSHAPE()
+{
+    var text="Generative models that produce point clouds have emerged as a powerful tool to represent 3D surfaces, and the best current ones rely on learning an ensemble of parametric representations. Unfortunately, they offer no control over the deformations of the surface patches that form the ensemble and thus fail to prevent them from either overlapping or collapsing into single points or lines. As a consequence, computing shape properties such as surface normals and curvatures becomes difficult and unreliable. In this paper, we show that we can exploit the inherent differentiability of deep networks to leverage differential surface properties during training so as to prevent patch collapse and strongly reduce patch overlap. Furthermore, this lets us reliably compute quantities such as surface normals and curvatures. We will demonstrate on several tasks that this yields more accurate surface reconstructions than the state-of-the-art methods in terms of normals estimation and amount of collapsed and overlapped patches.";
+
+    if (statusSHAPE == "less") {
+        document.getElementById("textAreaSHAPE").innerHTML=text;
+        document.getElementById("toggleButtonSHAPE").innerHTML = "See Less";
+        statusSHAPE = "more";
+    } else if (statusSHAPE == "more") {
+        document.getElementById("textAreaSHAPE").innerHTML = "In this paper, we show that we can exploit the inherent differentiability of deep networks to leverage differential surface properties during training so as to prevent patch collapse and strongly reduce patch overlap.";
+        document.getElementById("toggleButtonSHAPE").innerHTML = "See More";
+        statusSHAPE = "less"
+    }
+}
+
+</script>
 
 
 </body>
