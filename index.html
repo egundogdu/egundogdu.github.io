@@ -124,6 +124,27 @@
 
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
       <tr>
+      <td width="20%">
+      <img src='food.png' width="300">
+      </td>
+      <td valign="top" width="75%">
+      <heading>Cross-Modal Recipe Retrieval</heading><br>
+      <papertitle>Revamping Cross-Modal Recipe Retrieval with Hierarchical Transformers and Self-supervised Learning</papertitle>
+      <br>
+      (<a target="_blank" href="https://openaccess.thecvf.com/content/CVPR2021/papers/Salvador_Revamping_Cross-Modal_Recipe_Retrieval_With_Hierarchical_Transformers_and_Self-Supervised_Learning_CVPR_2021_paper.pdf">CVF</a>)
+      (<a target="_blank" href="https://github.com/amzn/image-to-recipe-transformers">Code</a>)<br>
+      A. Salvador, <strong>E. Gundogdu</strong>, L. Bazzani, M. Donoser,
+      <em>published in IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2021 <br>
+      <p></p>
+      <p id="textAreaFOOD" align="justify" style = "font-size:15px">In this work, we revisit existing approaches for cross-modal recipe retrieval and propose a simplified end-to-end model based on well established and high performing encoders for text and images. We leverage transformers more effectively with a hierarchical design and exploit self-supervised text representation learning where we support different food descriptions to be similar but not the same. As a result, our proposed method achieves state-of-the-art performance in the cross-modal recipe retrieval task on the Recipe1M dataset. We make code and models publicly available.
+      </p><a id="toggleButtonFOOD" onclick="toggleTextFOOD()" href="javascript:void(0);">See More</a>
+      </td>
+      </tr>
+      </table>
+
+
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
       <td width="25%">
       <video width="300" class="border" controls loop>
       <source src="output.mp4" type="video/mp4">
@@ -374,6 +395,24 @@ function toggleTextSHAPE()
         statusSHAPE = "less"
     }
 }
+
+var statusFOOD = "less";
+
+function toggleTextFOOD()
+{
+    var text="Cross-modal recipe retrieval has recently gained substantial attention due to the importance of food in people's lives, as well as the availability of vast amounts of digital cooking recipes and food images to train machine learning models. In this work, we revisit existing approaches for cross-modal recipe retrieval and propose a simplified end-to-end model based on well established and high performing encoders for text and images. We introduce a hierarchical recipe Transformer which attentively encodes individual recipe components (titles, ingredients and instructions). Further, we propose a self-supervised loss function computed on top of pairs of individual recipe components, which is able to leverage semantic relationships within recipes, and enables training using both image-recipe and recipe-only samples. We conduct a thorough analysis and ablation studies to validate our design choices. As a result, our proposed method achieves state-of-the-art performance in the cross-modal recipe retrieval task on the Recipe1M dataset. We make code and models publicly available.";
+
+    if (statusFOOD == "less") {
+        document.getElementById("textAreaFOOD").innerHTML=text;
+        document.getElementById("toggleButtonFOOD").innerHTML = "See Less";
+        statusFOOD = "more";
+    } else if (statusFOOD == "more") {
+        document.getElementById("textAreaFOOD").innerHTML = "In this work, we revisit existing approaches for cross-modal recipe retrieval and propose a simplified end-to-end model based on well established and high performing encoders for text and images. We leverage transformers more effectively with a hierarchical design and exploit self-supervised text representation learning where we support different food descriptions to be similar but not the same. As a result, our proposed method achieves state-of-the-art performance in the cross-modal recipe retrieval task on the Recipe1M dataset. We make code and models publicly available.";
+        document.getElementById("toggleButtonFOOD").innerHTML = "See More";
+        statusFOOD = "less"
+    }
+}
+
 
 </script>
 
