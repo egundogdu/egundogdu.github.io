@@ -147,6 +147,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </td>
       </tr>
       </table>
+
+  <table width="1000" border="0" align="center" cellspacing="30" cellpadding="0">
+    <tr>
+    <td>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+      <td width="20%">
+      <img src='iEDIT.png' width="300">
+      </td>
+      <td valign="top" width="60%">
+      <heading>Generative AI</heading><br>
+      <papertitle>iEdit: Localised Text-guided Image Editing with Weak Supervision</papertitle>
+      <br>
+      (<a target="_blank" href="https://arxiv.org/pdf/2305.05947.pdf">arXiv</a>)
+      <br>
+      Rumeysa Bodur, <strong>E. Gundogdu</strong>, Binod Bhattarai, Tae-Kyun Kim, Michael Donoser, Loris Bazzani,
+      <em>preprint (arXiv Preprint)</em>, 2022 <br>
+      <p></p>
+      <p id="textAreaiEDIT" align="justify" style = "font-size:15px">Diffusion models (DMs) can generate realistic images with text guidance using large-scale datasets. However, they demonstrate limited controllability in the output space of the generated images. We propose a novel learning method for text-guided image editing, namely iEdit, that generates images conditioned on a source image and a textual edit prompt. As a fully-annotated dataset with target images does not exist, previous approaches perform subject-specific fine-tuning at test time or adopt contrastive learning without a target image, leading to issues on preserving the fidelity of the source image. We propose ...
+      </p><a id="toggleButtoniEDIT" onclick="toggleTextiEDIT()" href="javascript:void(0);">See More</a>
+      </td>
+      </tr>
+  </table>
+      <br>
             
   <table width="1000" border="0" align="center" cellspacing="30" cellpadding="0">
     <tr>
@@ -527,6 +551,23 @@ function toggleTextCLAP()
         document.getElementById("textAreaCLAP").innerHTML = "In this work, we address the limitations of using pre-trained video backbones on trimmed action recognition datasets which do not have sufficient temporal sensitivity to distinguish foreground and background. We introduce a masked contrastive learning loss to capture visio-linguistic relations between activities, background video clips and language in the form of captions. Our experiments show that the proposed approach improves the state-of-the-art on temporal action localization, few-shot temporal action localization, and video language grounding tasks.";
         document.getElementById("toggleButtonCLAP").innerHTML = "See More";
         statusCLAP = "less"
+    }
+}
+
+
+var statusiEDIT = "less";
+function toggleTextiEDIT()
+{
+    var text="Diffusion models (DMs) can generate realistic images with text guidance using large-scale datasets. However, they demonstrate limited controllability in the output space of the generated images. We propose a novel learning method for text-guided image editing, namely iEdit, that generates images conditioned on a source image and a textual edit prompt. As a fully-annotated dataset with target images does not exist, previous approaches perform subject-specific fine-tuning at test time or adopt contrastive learning without a target image, leading to issues on preserving the fidelity of the source image. We propose to automatically construct a dataset derived from LAION-5B, containing pseudo-target images with their descriptive edit prompts given input image-caption pairs. This dataset gives us the flexibility of introducing a weakly-supervised loss function to generate the pseudo-target image from the latent noise of the source image conditioned on the edit prompt. To encourage localised editing and preserve or modify spatial structures in the image, we propose a loss function that uses segmentation masks to guide the editing during training and optionally at inference. Our model is trained on the constructed dataset with 200K samples and constrained GPU resources. It shows favourable results against its counterparts in terms of image fidelity, CLIP alignment score and qualitatively for editing both generated and real images.";
+
+    if (statusiEDIT == "less") {
+        document.getElementById("textAreaiEDIT").innerHTML=text;
+        document.getElementById("toggleButtoniEDIT").innerHTML = "See Less";
+        statusiEDIT = "more";
+    } else if (statusiEDIT == "more") {
+        document.getElementById("textAreaiEDIT").innerHTML = "Diffusion models (DMs) can generate realistic images with text guidance using large-scale datasets. However, they demonstrate limited controllability in the output space of the generated images. We propose a novel learning method for text-guided image editing, namely iEdit, that generates images conditioned on a source image and a textual edit prompt. As a fully-annotated dataset with target images does not exist, previous approaches perform subject-specific fine-tuning at test time or adopt contrastive learning without a target image, leading to issues on preserving the fidelity of the source image. We propose ...";
+        document.getElementById("toggleButtoniEDIT").innerHTML = "See More";
+        statusiEDIT = "less"
     }
 }
 
