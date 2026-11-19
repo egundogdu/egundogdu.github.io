@@ -154,34 +154,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
       <tr>
       <td width="20%">
-      <img src='iEDIT.png' width="300">
+      <img src='text_only_video.png' width="300">
       </td>
       <td valign="top" width="60%">
-      <heading>Generative AI</heading><br>
-      <papertitle>iEdit: Localised Text-guided Image Editing with Weak Supervision</papertitle>
+      <heading>Video Understanding</heading><br>
+      <papertitle>Grounding in the Dark: Text-Only Training for Zero-Shot Video Temporal Localization</papertitle>
       <br>
-      (<a target="_blank" href="https://arxiv.org/pdf/2305.05947.pdf">arXiv</a>)
+      (<a target="_blank" href="https://arxiv.org/pdf/2611.06149v2">arXiv</a>)
       <br>
-      R. Bodur, <strong>E. Gundogdu</strong>, B. Bhattarai, T.K. Kim, M. Donoser, L. Bazzani,
-      <em>preprint (arXiv Preprint)</em>, 2023 <br>
+      D. Mishra, S. Sternig, R. Shetty, <strong>E. Gundogdu</strong>,
+      <em>preprint (arXiv Preprint)</em>, 2026 <br>
       <p></p>
-      <p id="textAreaiEDIT" align="justify" style = "font-size:15px">Diffusion models (DMs) can generate realistic images with text guidance using large-scale datasets. However, they demonstrate limited controllability in the output space of the generated images. We propose a novel learning method for text-guided image editing, namely iEdit, that generates images conditioned on a source image and a textual edit prompt. As a fully-annotated dataset with target images does not exist, previous approaches perform subject-specific fine-tuning at test time or adopt contrastive learning without a target image, leading to issues on preserving the fidelity of the source image. We propose ...
-      </p><a id="toggleButtoniEDIT" onclick="toggleTextiEDIT()" href="javascript:void(0);">See More</a>
+      <p id="textAreaTEXTONLY" align="justify" style = "font-size:15px">Video-LLMs are typically trained on paired video-text data for temporal tasks, yet collecting precise temporal annotations and training on large-scale video datasets are both costly. We investigate whether a text-only LLM, with no vision-language pretraining, can be trained on textual video descriptions alone to perform temporal grounding and receive video only at inference time. ...
+      </p><a id="toggleButtonTEXTONLY" onclick="toggleTextTEXTONLY()" href="javascript:void(0);">See More</a>
       </td>
       </tr>
-  </table>
+      </table>
       <br>
-            
-  <table width="1000" border="0" align="center" cellspacing="30" cellpadding="0">
-    <tr>
-    <td>
+
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
       <tr>
       <td width="20%">
       <img src='CLAP.png' width="300">
       </td>
       <td valign="top" width="60%">
-      <heading>Video Representation Learning</heading><br>
+      <heading>Video Understanding</heading><br>
       <papertitle>Contrastive Language-Action Pre-training for Temporal Localization</papertitle>
       <br>
       (<a target="_blank" href="https://arxiv.org/pdf/2204.12293.pdf">arXiv</a>)
@@ -194,6 +191,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </td>
       </tr>
       </table>
+      <br>
+            
+  <table width="1000" border="0" align="center" cellspacing="30" cellpadding="0">
+    <tr>
+    <td>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+      <td width="20%">
+      <img src='iEDIT.png' width="300">
+      </td>
+      <td valign="top" width="60%">
+      <heading>Image Generation</heading><br>
+      <papertitle>iEdit: Localised Text-guided Image Editing with Weak Supervision</papertitle>
+      <br>
+      (<a target="_blank" href="https://arxiv.org/pdf/2305.05947.pdf">arXiv</a>)
+      <br>
+      R. Bodur, <strong>E. Gundogdu</strong>, B. Bhattarai, T.K. Kim, M. Donoser, L. Bazzani,
+      <em>preprint (arXiv Preprint)</em>, 2023 <br>
+      <p></p>
+      <p id="textAreaiEDIT" align="justify" style = "font-size:15px">Diffusion models (DMs) can generate realistic images with text guidance using large-scale datasets. However, they demonstrate limited controllability in the output space of the generated images. We propose a novel learning method for text-guided image editing, namely iEdit, that generates images conditioned on a source image and a textual edit prompt. As a fully-annotated dataset with target images does not exist, previous approaches perform subject-specific fine-tuning at test time or adopt contrastive learning without a target image, leading to issues on preserving the fidelity of the source image. We propose ...
+      </p><a id="toggleButtoniEDIT" onclick="toggleTextiEDIT()" href="javascript:void(0);">See More</a>
+      </td>
+      </tr>
+  </table>
       <br>
 
 
@@ -534,6 +555,23 @@ function toggleTextABO()
         document.getElementById("textAreaABO").innerHTML = "We introduce Amazon Berkeley Objects (ABO), a new large-scale dataset designed to help bridge the gap between real and virtual 3D worlds. We derive challenging benchmarks that exploit the unique properties of ABO and measure the current limits of the state-of-the-art on three open problems for real-world 3D object understanding: single-view 3D reconstruction, material estimation, and cross-domain multi-view object retrieval.";
         document.getElementById("toggleButtonABO").innerHTML = "See More";
         statusABO = "less"
+    }
+}
+
+var statusTEXTONLY = "less";
+
+function toggleTextTEXTONLY()
+{
+    var text="Video-LLMs are typically trained on paired video-text data for temporal tasks, yet collecting precise temporal annotations and training on large-scale video datasets are both costly. We investigate whether a text-only LLM, with no vision-language pretraining, can be trained on textual video descriptions alone to perform temporal grounding and receive video only at inference time. This setting removes paired video data from training altogether and is a step toward training multimodal models without paired annotations. We generate a 134K-example corpus of textual sequences with up to 100 time steps, adapt Qwen3-8B with LoRA on CLIP or LLM2CLIP text embeddings, and evaluate on Charades-STA and QV-Highlights without training on videos from either benchmark. LLM2CLIP, whose text encoder supports longer inputs, represents detailed descriptions better than CLIP (61.54 versus 53.86 mtIoU on Temporal-TextVid) and transfers them better to video. Still, replacing text with frame embeddings at inference yields only 4.99 mtIoU on Charades-STA and 11.12 on QV-Highlights, revealing a large modality gap. To bridge it, we propose Nearest Entity Replacement (NER), a training-free mapping that represents each video frame by the normalized mean of its nearest text-entity embeddings, so that the model receives the kind of input it was trained on. NER reaches 14.45 mtIoU on Charades-STA and 20.72 on QV-Highlights, outperforming the strongest of four families of modality-gap baselines by 5.00 and 1.71 points. NER thus enables partial transfer from text to video, while more reliable grounding will likely require encoders with better-aligned text and visual representations.";
+
+    if (statusTEXTONLY == "less") {
+        document.getElementById("textAreaTEXTONLY").innerHTML=text;
+        document.getElementById("toggleButtonTEXTONLY").innerHTML = "See Less";
+        statusTEXTONLY = "more";
+    } else if (statusTEXTONLY == "more") {
+        document.getElementById("textAreaTEXTONLY").innerHTML = "Video-LLMs are typically trained on paired video-text data for temporal tasks, yet collecting precise temporal annotations and training on large-scale video datasets are both costly. We investigate whether a text-only LLM, with no vision-language pretraining, can be trained on textual video descriptions alone to perform temporal grounding and receive video only at inference time. ...";
+        document.getElementById("toggleButtonTEXTONLY").innerHTML = "See More";
+        statusTEXTONLY = "less"
     }
 }
 
